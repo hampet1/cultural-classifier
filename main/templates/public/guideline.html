@@ -1,0 +1,36 @@
+{% extends 'public/base.html' %}
+
+            {% block content %}
+
+        <section class="container-fluid bg">
+            <section class= "row justify-content-center ">
+                <section class="col-6 p-0"><br>
+                    <h3 style="text-align:center;"> Guideline </h3><br>
+                    <p> This guideline aims to help users to provide correct information to the classifier. Most of the data was collected by <a href="https://www.esri.com/en-us/arcgis/about-arcgis/overview">ArcGIS</a> software or similar tools used for manipulation with spatial and non-spatial geographical data. <br> If you have any questions or concerns about the matter below, please do not hesitate to contact Petr Neruda at pneruda@mzm.cz</p><br><hr><br>
+                    <h5>Elevation above river</h5>
+                        <p>Height above the closest river level is a measure of the vertical distance (height, elevation or altitude) of a location in reference to the closest larger watercourse.<p><br>
+                    <h5>Distance to river</h5>
+                        <p>Represents the shortest path from a given site to the closest bigger watercourse (Earth's curvature was omitted while measuring the distance).<p><br>
+                    <h5>Normalized height</h5>
+                        <p> Min-max normalization method, consists in rescaling the range of features (in our case elevation above river) to scale the range in [0, 1]. <p>
+                        <p> How to normalize (feature scale) data: </p>
+                        <p style="float:left; margin-left: 5%;">$$ {x' =\frac{x - min(x)}{max(x) - min(x)} } $$</p><br><br><br><br><br>
+                        <p>  x represents an original altitude of our site, x' is the normalized value, min(x) is altitude of the closest river and max(x) is altitude of the closest point on the top of the hill. </p><br><br>
+                    <h5>Viewshed</h5>
+                    <p> Geoprocessing tool that determines the raster surface locations visible to a set of observer features. To perform viewshed analysis check out this <a href="https://gis.fema.gov/arcgis/help/en/portal/latest/use/create-viewshed.htm">website</a>.</p><br><br>
+                    <h5>Terrain variability 500m</h5>
+                    <p>This proximity analysis value was gathered by creating an enclosing buffer polygon in radius of 500m around an input feature (archaeological site). To create buffer please check out the following <a href="https://desktop.arcgis.com/en/arcmap/10.3/analyze/commonly-used-tools/proximity-analysis.htm">link</a>.</p><br><br>
+                    <h5>Terrain variability 1000m</h5>
+                    <p>This proximity analysis value was gathered by creating an enclosing buffer polygon in radius of 1000m around an input feature (archaeological site). To create buffer please check out the following <a href="https://desktop.arcgis.com/en/arcmap/10.3/analyze/commonly-used-tools/proximity-analysis.htm">link</a>.</p><br><br><br>
+
+
+            </section>
+          </section>
+         </section>
+            {% endblock %}
+            
+            <!-- library for printing math equations -->
+            {% block javascript %}
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+            {% endblock %}
+            

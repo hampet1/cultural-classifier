@@ -1,0 +1,88 @@
+{% extends 'public/base.html' %}
+
+          <!-- adding title -->
+          {% block title %} Home {% endblock %}
+
+          <!-- adding log in on the navbar -->
+                    {% block log %}
+                    {% if user.is_authenticated %}
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('auth.log_out')}}">Log out</a>
+                      </li>
+                    {% else %}
+                      <li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('auth.log_in')}}">Log in</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('auth.sign_up')}}">Sign up</a>
+                      </li>
+                      {% endif %}
+                     {% endblock %}
+
+
+          <!-- main caption -->
+          {% block jumbotron %}
+            <div class="jumbotron">
+              <h2> Machine learning classifier </h2><br>
+              <h5> (Epigravettian vs Epiaurignacian)</h5><br>
+              <p> This aplication is used to determine cultural affiliation based on geographical features </p>
+              <p> To fill out the form properly please check out our <a href="{{ url_for('views.guideline')}}" target="_blank">guideline</a></p>
+            </div>
+          {% endblock %}
+
+          <!-- main content -->
+            {% block content %}
+            <div id = "own-bottom-margin">
+              <section class="container-fluid padding">
+                <div class="row">
+                  <div class="col-sm-4">
+                  </div>
+                  <div class="col-sm-4">
+                  <section class="container-fluid bg">
+                    <row class= "d-flex justify-content-center">
+                      <section class="col-12 p-0 text-center">
+                        <form action="{{ url_for('views.classify')}}" method="POST">
+                          <div class="form-group">
+                            <label for="elevation"><strong>Elevation above river</strong></label><br>
+                            <input type="text" name="elevation" class="form-control" autocomplete="off" id="elevation" placeholder="Ranging from 0 to 4000">
+                          </div>
+                          <div class="form-group">
+                            <label for="distance"><strong>Distance to river</strong></label><br>
+                            <input type="text" name="distance" class="form-control" autocomplete="off" id="distance" placeholder="Ranging from 0 to 100000">
+                          </div>
+                          <div class="form-group">
+                            <label for="height"><strong>Normalized height</strong></label><br>
+                            <input type="text" name="height" class="form-control" autocomplete="off" id="height" placeholder="Ranging from 0 to 1">
+                          </div>
+                          <div class="form-group">
+                            <label for="viewshed"><strong>Viewshed</strong></label><br>
+                            <input type="text" name="viewshed" class="form-control" autocomplete="off" id="viewshed" placeholder="Ranging from 0 to 1000000">
+                          </div>
+                          <div class="form-group">
+                            <label for="terrain-short"><strong>Terrain variability 500 m </strong></label><br>
+                            <input type="text" name="terrain_short" class="form-control" autocomplete="off" id="terrain-short" placeholder="Ranging from 0 to 200">
+                          </div>
+                          <div class="form-group">
+                            <label for="terrain-long"><strong>Terrain variability 1000 m </strong></label><br>
+                            <input type="text" name="terrain_long" class="form-control" autocomplete="off" id="terrain-long" placeholder="Ranging from 0 to 400">
+                          </div>
+                            <div class="row">
+                              <div class="col text-center">
+                              <div>
+                                  <button type="submit" class="btn btn-primary mt-3" value="submit">Classify</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                    </section>
+                  </row>
+                </section>
+              </div>
+            <div class="col-sm-4">
+                  </div>
+                </div>
+              </section>
+            </div>
+            {% endblock %}
+      

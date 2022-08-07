@@ -1,0 +1,51 @@
+{% extends 'public/base.html' %}
+
+            <!-- adding title -->
+          {% block title %} Sign up {% endblock %}
+
+
+
+
+            {% block content %}
+
+            <section class="container-fluid bg">
+                <section class= "row justify-content-center">
+                    <section class="col-12 col-sm-4">
+                        <div class="my-signup">
+                        <h3 align="center"> Sign up </h3>
+                        <form action="{{ url_for('auth.sign_up')}}" class="form-container" method="POST">
+                            <div class="form-group">
+                              <label for="first-name">First Name</label>
+                              <input type="text" class="form-control" id="first-name" placeholder="First Name" name="first-name">
+                            </div>
+                            <div class="form-group">
+                              <label for="last-name">Last Name</label>
+                              <input type="text" class="form-control" id="last-name" placeholder="Last Name" name="last-name">
+                            </div>
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                            </div>
+                            <div class="form-group">
+                              <label for="password">Password</label>
+                              <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                            </div>
+                            <div class="form-group">
+                              <label for="confirm-password">Confirm password</label>
+                              <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password" name="confirm-password">
+                            </div>
+                            <br>
+                                <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Create Account</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        
+        {% endblock %}
+
+        
+        
+</html>

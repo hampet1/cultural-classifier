@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html>
+    <head>
+      <!-- Required meta tags -->
+        <title>{% block title %} {% endblock %}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <!-- Bootstrap CSS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <!-- my CSS -->
+        <link rel="stylesheet" href="{{url_for('static', filename='my-style.css')}}">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- my JS -->
+        <script src="{{url_for('static', filename='index.js')}}"></script>
+
+        {% block style %}
+        {% endblock %}
+        {% block script %}
+        {% endblock %}
+
+        <!-- unify it -->
+        {% block head %}
+        {% endblock %}
+
+
+    </head>
+      <body class="d-flex flex-column min-vh-100">
+              <!-- navbar -->    
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark align-items-center pt-4 pb-3">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse p-2 " id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                          <a class="nav-link {% if page == 'home' %} active {% endif %}" href="{{ url_for('views.home')}}">Home <span class="sr-only">(current)</span></a>
+                          <li class="nav-item">
+                        <a class="nav-link {% if page == 'guideline' %} active {% endif %}" href="{{ url_for('views.guideline')}}">Guideline</a>
+                      </li>
+                       <li class="nav-item">
+                        <a class="nav-link {% if page == 'about_project' %} active {% endif %}" href="{{ url_for('views.about_project')}}">About project</a>
+                      </li>
+                       <li class="nav-item">
+                        <a class="nav-link {% if page == 'maps' %} active {% endif %}" href="{{ url_for('maps.map')}}">Maps</a>
+                      </li>
+                      </ul>
+
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+
+                         {% if user.is_authenticated %}
+                      <li class="nav-item">
+                        <a class="nav-link {% if page == 'log_out' %} active {% endif %}" href="{{ url_for('auth.log_out')}}">Log out</a>
+                      </li>
+                        {% else %}
+                      <li>
+                       <li class="nav-item">
+                        <a class="nav-link {% if page == 'log_in' %} active {% endif %}" href="{{ url_for('auth.log_in')}}">Log in</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link {% if page == 'sign_up' %} active {% endif %}" href="{{ url_for('auth.sign_up')}}">Sign up</a>
+                      </li>
+                      {% endif %}
+
+                    </div>
+
+                  </div>
+                </nav>
+                     
+              
+              <!-- jumbotron -->
+
+                {% block jumbotron %}
+                
+                {% endblock %}
+
+                <!-- flashing messages -->
+
+                <div class="container">
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                  {% if messages %}
+                    <ul class="flashes">
+                    {% for category, message in messages %}
+                        {% if category=="error" %}
+                      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>{{message}}</strong> 
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                        {% else %}
+                      <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>{{message}}</strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                  {% endif %}
+                {% endwith %}
+                </div>      
+
+              <br>
+
+              <!-- block content -->
+              {% block content %}
+              
+              {% endblock %}
+              <!-- Footer - fixing the footer on the bottom-->
+              <footer class="mt-auto">
+                <div class="container-fluid text-center bg-dark text-white pt-3">   
+                  <div class="row">
+                    <div class="col-12">
+                      <p><small>Created by Petr Hamrozi <br> hamrozipetr@outlook.com </small></p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            
+              <!-- Optional JavaScript -->
+              <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+              integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+              </script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+              integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+              </script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+              integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>     
+              <!--  other possible libraries -->
+              {% block javascript %}
+                           
+              {% endblock %}
+      </body>
+</html>
+
+
+
+
+
+
+        

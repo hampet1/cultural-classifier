@@ -1,0 +1,21 @@
+{% extends 'public/base.html' %}
+
+
+            {% block content %}
+
+        <section class="container-fluid bg">
+            <section class= "row justify-content-center ">
+                <section class="col-6 p-0"><br>
+                    <h3 style="text-align:center;"> About this project </h3><br><hr><br>
+                    <p>This application was created based on archaeological research conducted by <a href="https://www.researchgate.net/scientific-contributions/Zdenka-Nerudova-51407602">Zdenka Neruda</a>, <a href="https://www.researchgate.net/profile/Petr-Neruda">Petr Neruda</a> and <a href="https://www.researchgate.net/profile/Petr-Hamrozi">Petr Hamrozi</a> under the patronage of the <a href="http://www.mzm.cz/en/anthropos-pavilion/">Anthropos Institute</a> (Brno, Czech Republic).
+                    The paper which describes the above mentioned research is available <a href="https://www.sciencedirect.com/science/article/abs/pii/S1040618220303657.">here</a>.<br>
+                    The main reason for creating the cultural classifier was to deliver a product that is able to distinguish between two archaeological cultures (specifically epigravettian and epiaurignacian) that are hard to classify with, the conventional classification approach depends on analysing the stone tool industry.<br>
+                    Unlike these traditional methods, this model uses geographical data as the only resource for classifying ambiguous artefacts without the need for further analysis. <br> Unfortunately, the user of this app is supposed to keep in mind that the model was trained only on data collected in a small area in the Czech Republic (predominantly in Central Moravia) with specific geographical features that do not allow using the model for archaeological sites outside of the area of focus.<br>
+                    All info about training and testing sites (including the exact location and cultural affiliation) that were used for both this model and the scientific paper is available in the maps section. To access the maps section please <a href="{{ url_for('auth.log_in')}}">log in</a> .</p>
+
+                </section>
+            </section>
+        </section>
+            {% endblock %}
+
+
