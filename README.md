@@ -1,15 +1,7 @@
 <h1 align="center"> Cultural classifier </h1>
 
-<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
-![GitHub repo size](https://img.shields.io/github/repo-size/scottydocs/README-template.md)
-![GitHub contributors](https://img.shields.io/github/contributors/scottydocs/README-template.md)
-![GitHub stars](https://img.shields.io/github/stars/scottydocs/README-template.md?style=social)
-![GitHub forks](https://img.shields.io/github/forks/scottydocs/README-template.md?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/scottydocs?style=social)
-
-Project name is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
-
-Additional line of information text about what the project does. Your introduction should be around 2 or 3 sentences. Don't go overboard, people won't read it.
+Cultural classifier was created based on archaeological research conducted by Zdenka Neruda, Petr Neruda and Petr Hamrozi under the patronage of the Anthropos Institute (Brno, Czech Republic). The paper which describes the above mentioned research is available here.
+The main reason for creating the cultural classifier was to deliver a product that is able to distinguish between two archaeological cultures (specifically epigravettian and epiaurignacian) that are hard to classify with, the conventional classification approach depends on analysing the stone tool industry.
 
 ## Prerequisites
 
