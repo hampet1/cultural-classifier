@@ -11,20 +11,15 @@ Before you begin, ensure you have met the following requirements:
 * You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
 * You have read `<guide/link/documentation_related_to_project>`.
 
-## Installing <project_name>
+## Installing Cultural classifier
 
-To install <project_name>, follow these steps:
+To install the app, follow these steps:
 
-Linux and macOS:
-```
-<install_command>
-```
+* pip install -r requirements.txt
+* set FLASK_ENV=development
+* set FLASK_APP=main
 
-Windows:
-```
-<install_command>
-```
-## Using <project_name>
+## Using Cultural classifier
 
 To use <project_name>, follow these steps:
 
