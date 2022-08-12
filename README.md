@@ -22,7 +22,7 @@ To install the app, follow these steps:
 * set FLASK_ENV=development
 * set FLASK_APP=main
 
-3. run app:
+3.run app:
 * flask run
 
 ## Using Cultural classifier
