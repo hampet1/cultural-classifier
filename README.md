@@ -15,9 +15,13 @@ Before you begin, ensure you have met the following requirements:
 
 To install the app, follow these steps:
 
+1.install all libraries:
 * pip install -r requirements.txt
+2.set up config:
 * set FLASK_ENV=development
 * set FLASK_APP=main
+3. run app:
+* flask run
 
 ## Using Cultural classifier
 
