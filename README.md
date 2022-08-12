@@ -1,6 +1,6 @@
 <h1 align="center"> Cultural classifier </h1>
 
-Cultural classifier was created based on archaeological research conducted by [Zdenka Neruda](https://www.researchgate.net/scientific-contributions/Zdenka-Nerudova-51407602), [Petr Neruda](https://www.researchgate.net/profile/Petr-Neruda) and [Petr Hamrozi](https://www.researchgate.net/profile/Petr-Hamrozi) under the patronage of the Anthropos Institute (Brno, Czech Republic). The paper which describes the above mentioned research is available here.
+Cultural classifier was created based on archaeological research conducted by [Zdenka Neruda](https://www.researchgate.net/scientific-contributions/Zdenka-Nerudova-51407602), [Petr Neruda](https://www.researchgate.net/profile/Petr-Neruda) and [Petr Hamrozi](https://www.researchgate.net/profile/Petr-Hamrozi) under the patronage of the [Anthropos Institute](http://www.mzm.cz/en/anthropos-pavilion/) (Brno, Czech Republic). The paper which describes the above mentioned research is available here.
 The main reason for creating the cultural classifier was to deliver a product that is able to distinguish between two archaeological cultures (specifically epigravettian and epiaurignacian) that are hard to classify with, the conventional classification approach depends on analysing the stone tool industry.
 
 ## Prerequisites
