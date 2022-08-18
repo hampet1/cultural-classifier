@@ -3,7 +3,7 @@
 Cultural classifier is an application using ML model to distinguish between two archaeological cultures (specifically epigravettian and epiaurignacian) that are hard to classify with the conventional classification approach that relies on analysing the stone tool industry.<br>
 
 * machine learning for classification purposes in archaeology
-* practical usage of xgboost model as a complement for classifying stone industry
+* practical usage of XGBoost  model as a complement for classifying stone industry, trained model is available [here] !!!!!!!!!!!!!11
 
 
 ## Watch the video about cultural classifier or checkout the app
@@ -46,13 +46,20 @@ Cultural classifier is an application using ML model to distinguish between two 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The optimal way is to conduct a daily update to allow this app to precisely monitor and to track your mood/mental state. 
+Eleborate on classification and interactive map usage !!!!!!!!!!!!!!!
 
-For more info please checkout the website's [guideline](https://cultural-classifier.herokuapp.com/about-project)
+For more info please checkout the website's [about project](https://cultural-classifier.herokuapp.com/about-project)
 
 ## More resources
 
 The scientific paper which backs up the whole idea of applying machine learning model for classification purposes in such fields as archeology is available [here](https://www.sciencedirect.com/science/article/abs/pii/S1040618220303657)  
+
+## Known issues (work in progress)
+
+It's absolutely crucial to collect more data regarding these archaeologically hard to determine cultures to fully understand potencial of this quite a 
+new approach. At this stage the amount of data is not sufficient, that's why we should take this project for the time being with a grain of salt. 
+
+
 
 <!-- LICENSE -->
 ## License
