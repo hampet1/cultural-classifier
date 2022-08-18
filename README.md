@@ -1,50 +1,74 @@
 <h1 align="center"> Cultural classifier </h1>
 
-Cultural classifier was created based on archaeological research conducted by [Zdenka Neruda](https://www.researchgate.net/scientific-contributions/Zdenka-Nerudova-51407602), [Petr Neruda](https://www.researchgate.net/profile/Petr-Neruda) and [Petr Hamrozi](https://www.researchgate.net/profile/Petr-Hamrozi) under the patronage of the [Anthropos Institute](http://www.mzm.cz/en/anthropos-pavilion/) (Brno, Czech Republic). The paper which describes the above mentioned research is available here.
-The main reason for creating the cultural classifier was to deliver a product that is able to distinguish between two archaeological cultures (specifically epigravettian and epiaurignacian) that are hard to classify with, the conventional classification approach depends on analysing the stone tool industry.
+Cultural classifier is an application using ML model to distinguish between two archaeological cultures (specifically epigravettian and epiaurignacian) that are hard to classify with the conventional classification approach that relies on analysing the stone tool industry.<br>
 
-## Visit app [online](https://cultural-classifier.herokuapp.com/)
+* machine learning for classification purposes in archaeology
+* practical usage of xgboost model as a complement for classifying stone industry
 
-## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
-<!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `<coding_language/dependency/requirement_1>`
-* You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
-* You have read `<guide/link/documentation_related_to_project>`.
+## Watch the video about cultural classifier or checkout the app
 
-## Installing Cultural classifier
+<h4>Watch the video <a href="https://trackmood.herokuapp.com">here</a></h4>
+<h4>You can checkout the app <a href="https://cultural-classifier.herokuapp.com/">here</a></h4>
 
-To install the app, follow these steps:
 
-1.install all libraries:
-* pip install -r requirements.txt
+<!-- GETTING STARTED -->
+## Getting Started
 
-2.set up config:
-* set FLASK_ENV=development
-* set FLASK_APP=main
+### Prerequisites
 
-3.run app:
-* flask run
+  ```sh
+  pip (package manager)
+  python 3.6 (and newer versions)
+  ```
 
-## Using Cultural classifier
+### Installation
 
-To use <project_name>, follow these steps:
 
-```
-<usage_example>
-```
+1. Clone the repo
+   ```
+   git clone https://github.com/hampet1/moodtracker.git
+   ```
+2. Install packages
+   ```
+   pip install -r requirements.txt
+   ```
+3. Set up config
+   ```
+   * set FLASK_ENV=development
+   * set FLASK_APP=main
+   ```
+4. Run server
+   ```
+   flask run
+   ```  
 
-Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
+<!-- USAGE EXAMPLES -->
+## Usage
 
+The optimal way is to conduct a daily update to allow this app to precisely monitor and to track your mood/mental state. 
+
+For more info please checkout the website's [guideline](https://cultural-classifier.herokuapp.com/about-project)
+
+## More resources
+
+The scientific paper which backs up the whole idea of applying machine learning model for classification purposes in such fields as archeology is available [here](https://www.sciencedirect.com/science/article/abs/pii/S1040618220303657)  
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License.
+
+
+<!-- CONTACT -->
 ## Contact
 
-If you want to contact me you can reach me at <hamrozipetr@outlook.com>.
+Petr Hamrozi - hamrozipetr@outlook.com
 
-## License
-<!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-This project uses the following license: [<license_name>](<link>).
+
+
+
 
 
 
