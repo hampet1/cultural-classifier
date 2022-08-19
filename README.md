@@ -61,7 +61,10 @@ The scientific paper which backs up the whole idea of applying machine learning 
 It's absolutely crucial to collect more data regarding these archaeologically hard to determine cultures to fully understand potencial of this quite a 
 new approach. At this stage the amount of data is not sufficient, that's why we should take this project for the time being with a grain of salt. 
 
+## Acknowledgment
 
+All data was collected by associate professors [Zdenka Neruda](https://www.researchgate.net/scientific-contributions/Zdenka-Nerudova-51407602) and 
+[Petr Neruda](https://www.researchgate.net/profile/Petr-Neruda), under the patronage of the [Anthropos Institute](http://www.mzm.cz/en/anthropos-pavilion/).  
 
 <!-- LICENSE -->
 ## License
