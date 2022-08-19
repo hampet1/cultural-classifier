@@ -4,7 +4,7 @@ Cultural classifier is an application using ML model to distinguish between two 
 
 * machine learning for classification purposes in archaeology
 * practical usage of XGBoost  model as a complement for classifying stone industry, trained model is available [here] !!!!!!!!!!!!!11
-
+* all archaeological sites are represented by using interactive maps
 
 ## Watch the video about cultural classifier or checkout the app
 
