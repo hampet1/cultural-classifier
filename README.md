@@ -1,9 +1,9 @@
 <h1 align="center"> Cultural classifier </h1>
 
-Cultural classifier is an application using ML model to distinguish between two archaeological cultures (specifically epigravettian and epiaurignacian) that are hard to classify with the conventional classification approach that relies on analysing the stone tool industry.<br>
+Cultural classifier is an application using the ML model to distinguish between two archaeological cultures (specifically epigravettian and epiaurignacian) that are hard to classify with the conventional classification approach that relies on analysing the stone tool industry.<br>
 
 * machine learning for classification purposes in archaeology
-* practical usage of XGBoost  model as a complement for classifying stone industry, trained model is available [here] !!!!!! add it !!!
+* practical usage of the XGBoost  model as a complement for classifying stone industry, trained model is available [here] !!!!!! add it !!!
 * all archaeological sites are represented by using interactive maps
 
 ## Watch the video about cultural classifier or checkout the app
@@ -46,19 +46,19 @@ Cultural classifier is an application using ML model to distinguish between two 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Classifier allows distinguishing between two very simalar archaeological cultures in terms of material culture. The input data (attributes) includes 
+Classifier distinguishes between two very simalar archaeological cultures in terms of material culture. The input data (attributes) includes 
 geospacial data related to the archaeological sites, the output is one of the archaeological cultures.
 For more information regarding input data please checkout the [guideline](https://cultural-classifier.herokuapp.com/guideline).
 
-For more info please checkout the website's [about project](https://cultural-classifier.herokuapp.com/about-project)
+For more info please checkout the website [about project](https://cultural-classifier.herokuapp.com/about-project)
 
 ## More resources
 
-The scientific paper which backs up the whole idea of applying machine learning model for classification purposes in such fields as archeology is available [here](https://www.sciencedirect.com/science/article/abs/pii/S1040618220303657)  
+The scientific paper which backs up the whole idea of applyingthe  machine learning model for classification purposes in such fields as archeology is available [here](https://www.sciencedirect.com/science/article/abs/pii/S1040618220303657)  
 
 ## Known issues (work in progress)
 
-It's absolutely crucial to collect more data regarding these archaeologically hard to determine cultures to fully understand potencial of this quite a 
+It's absolutely crucial to collect more data regarding these archaeologically hard to determine cultures in order to fully understand the potential of this quite
 new approach. At this stage the amount of data is not sufficient, that's why we should take this project for the time being with a grain of salt. 
 
 ## Acknowledgment
