@@ -46,7 +46,9 @@ Cultural classifier is an application using ML model to distinguish between two 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Eleborate on classification and interactive map usage !!!!!!!!!!!!!!!
+Classifier allows distinguishing between two very simalar archaeological cultures in terms of material culture. The input data (attributes) includes 
+geospacial data related to the archaeological sites, the output is one of the archaeological cultures.
+For more information regarding input data please checkout the [guideline](https://cultural-classifier.herokuapp.com/guideline).
 
 For more info please checkout the website's [about project](https://cultural-classifier.herokuapp.com/about-project)
 
