@@ -8,6 +8,7 @@ Cultural classifier is an application using the ML model to distinguish between 
 
 ## Watch the video about cultural classifier or checkout the app
 
+<h4>You can watch the video <a href="https://cultural-classifier.herokuapp.com/">here</a></h4>
 <h4>You can checkout the app <a href="https://cultural-classifier.herokuapp.com/">here</a></h4>
 
 
